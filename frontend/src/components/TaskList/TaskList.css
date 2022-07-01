@@ -1,0 +1,28 @@
+.task-list-item {
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+.task-date {
+    position: absolute;
+    right: 120px;
+    top: 10px;
+}
+
+.delete-btn {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.delete-btn:hover {
+    background-color: var(--color-danger);
+    color: var(--color-dark);
+}

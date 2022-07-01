@@ -1,0 +1,31 @@
+header {
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: var(--color-dark);
+}
+
+.logo-small {
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+
+.link {
+    width: 200px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.link:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+}

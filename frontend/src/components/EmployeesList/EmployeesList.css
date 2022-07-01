@@ -1,0 +1,21 @@
+.list-link-container {
+    padding: 0;
+}
+
+.list-link {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.list-link:hover {
+    background-color: var(--color-cta);
+    color: var(--color-light)
+}
+
+.wrap {
+    overflow-wrap: break-word;
+}

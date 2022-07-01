@@ -1,0 +1,9 @@
+.table-link {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--color-light);
+}
+
+.wrap {
+    overflow-wrap: break-word;
+}

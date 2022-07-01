@@ -1,0 +1,13 @@
+.add-form {
+    width: 70%;
+    margin: 0 auto;
+    align-items: "";
+}
+
+.container {
+    margin: 0 auto;
+}
+
+textarea {
+    min-height: 270px; 
+}

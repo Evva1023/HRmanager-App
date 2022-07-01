@@ -1,0 +1,17 @@
+.theme-toggler {
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    top: 10px;
+    width: 40px;
+}
+
+.theme-toggler-btn {
+    position: absolute;
+    padding: 7px 7px 2px 7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}

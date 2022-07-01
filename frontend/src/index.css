@@ -1,0 +1,143 @@
+:root {
+    --color-light: #fff;
+    --color-medium: #cdc2ca;
+    --color-theme-dark: #6d7b8d;
+    --color-dark: #000;
+    --color-cta: #2b00d4;
+    --color-cta-hover: #24116f;
+    --color-table: #291b5f;
+    --color-danger: #eb0e4a;
+    --color-ok: #82cb29;
+    --color-bg: #abbbc4;
+    --transition: 0.2s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-title {
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 20px;
+    width: 90%;
+}
+
+tr:nth-child(2n) {
+    background-color: var(--color-table);
+    color: var(--color-medium)
+}
+
+th {
+    padding: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-medium);
+    font-weight: 100;
+    text-align: left;
+}
+
+td {
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 2px solid var(--color-dark);
+}
+
+input:not([type="checkbox"]):focus {
+    box-shadow: 1px 1px 7px var(--color-dark);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.table-container {
+    margin: 0 20px 0;
+}
+
+.container-small {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;                     
+}
+
+.btn-big {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-cta);
+    color: var(--color-light);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: var(--transition);
+    position: absolute;
+    right: 20px;
+    top: 65%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-big:hover {
+    background-color: var(--color-cta-hover);
+    color: var(--color-light);
+}
+
+#app {
+   min-height: 100vh;
+}
+
+.theme-light {
+    background-color: var(--color-bg);
+}
+
+.theme-dark {
+    background-color: var(--color-theme-dark);
+}
+
+.danger {
+    color: var(--color-danger);
+    font-weight: bold;
+    text-transform: uppercase;
+}

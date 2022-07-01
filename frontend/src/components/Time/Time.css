@@ -1,0 +1,12 @@
+.clock {
+    font-size: 10em;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
+    padding-top: 70px;
+}
+
+.date {
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 1em;
+}

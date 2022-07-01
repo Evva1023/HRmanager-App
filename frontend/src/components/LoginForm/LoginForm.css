@@ -1,0 +1,12 @@
+form {
+    margin-top: 1em;
+}
+
+form .link {
+    margin: 20px 0;
+    color: var(--color-light);
+}
+
+.link.disabled {
+     cursor: not-allowed;
+}
