@@ -5,9 +5,9 @@ class TaskRecord {
     constructor(task) {
         const {id, title, deadline, isCompleted} = task;
 
-        /*if (!name || typeof name !== string || name.length < 3) {
+        if (!title || typeof title !== string || title.length < 3) {
             throw new ValidationError("Task name must be entered and must have more than 3 characters");
-        }*/
+        }
 
         this.id = uuid();
         this.title = title;
