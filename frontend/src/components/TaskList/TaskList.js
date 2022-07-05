@@ -46,7 +46,7 @@ export const TaskList = () => {
                 <ul className="task-list">
                     {taskList.map((task, index) => (
                     <li key={task.id} className="task-list-item">
-                        {index + 1} {task.title}
+                        {index + 1}. {task.title}
                         <span className="task-date">{task.deadline}</span>
                         <button className="delete-btn" 
                             onClick={() => {
