@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://hrm-qe99.onrender.com/",
 }));
 app.use(express.json());
 app.use("/person", personRouter);

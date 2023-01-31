@@ -15,7 +15,7 @@ export const TaskList = () => {
     
     const sendForm = async (e) => {
         e.preventDefault();
-        const res = await fetch("http://localhost:3001/task", {
+        const res = await fetch("https://hr-manager-test.onrender.com/task", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export const TaskList = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch("http://localhost:3001/task");
+            const res = await fetch("https://hr-manager-test.onrender.com/task");
             const data = await res.json();
             setTaskList(data);
         })();
@@ -51,7 +51,7 @@ export const TaskList = () => {
                         <button className="delete-btn" 
                             onClick={() => {
                                 console.log(task.id);
-                                const res = fetch(`http://localhost:3001/task/${task.id}`, {method: "DELETE"});
+                                const res = fetch(`https://hr-manager-test.onrender.com/task/${task.id}`, {method: "DELETE"});
                                 console.log(res.status);
                             }}>
                             Delete
