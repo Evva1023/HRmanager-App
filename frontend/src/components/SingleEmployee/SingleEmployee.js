@@ -8,7 +8,7 @@ export const SingleEmployee = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/person/${id}`);
+            const res = await fetch(`https://hr-manager-test.onrender.com/person/${id}`);
             const data = await res.json();
             console.log(data);
             setPerson(data);
@@ -27,7 +27,7 @@ export const SingleEmployee = () => {
                     <button className="link table-link"
                             onClick={async () => {
                                 console.log(person.id);
-                                await fetch(`http://localhost:3001/person/${person.id}`, {
+                                await fetch(`https://hr-manager-test.onrender.com/person/${person.id}`, {
                                     method: "PUT",
                                     headers: {
                                         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export const SingleEmployee = () => {
                     <button className="link table-link danger"
                             onClick={async () => {
                                 console.log(person.id);
-                                await fetch(`http://localhost:3001/person/${person.id}`, {method: "DELETE"});
+                                await fetch(`https://hr-manager-test.onrender.com/person/${person.id}`, {method: "DELETE"});
                                 setPerson({});
                             }}>
                         Delete

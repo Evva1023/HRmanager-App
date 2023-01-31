@@ -7,7 +7,7 @@ export const EmployeesList = (props) => {
     const [list, setList] = useState(null);
     useEffect(() => {
         (async () => {
-            const res = await fetch("http://localhost:3001/person");
+            const res = await fetch("https://hr-manager-test.onrender.com/person");
             const data = await res.json();
             console.log(data);
             setList(data);

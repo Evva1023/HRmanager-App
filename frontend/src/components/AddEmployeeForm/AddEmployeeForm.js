@@ -15,7 +15,7 @@ export const AddEmployeeForm = () => {
 
     const sendForm = async (e) => {
         e.preventDefault();
-        const res = await fetch("http://localhost:3001/person", {
+        const res = await fetch("https://hr-manager-test.onrender.com/person", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
