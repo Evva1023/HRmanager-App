@@ -6,6 +6,7 @@ const {personRouter} = require("./routes/person");
 const {taskRouter} = require("./routes/task");
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 app.use(cors({
     origin: "http://localhost:3000",
@@ -16,4 +17,4 @@ app.use("/task", taskRouter);
 
 app.use(handleError);
 
-app.listen(3001, "0.0.0.0", () => console.log("Listening on http://localhost:3001"));
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
